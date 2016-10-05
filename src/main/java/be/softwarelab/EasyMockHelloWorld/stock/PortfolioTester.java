@@ -1,4 +1,4 @@
-package be.softwarelab.EasyMockHelloWorld;
+package be.softwarelab.EasyMockHelloWorld.stock;
 
 import java.util.ArrayList;
 import java.util.List;

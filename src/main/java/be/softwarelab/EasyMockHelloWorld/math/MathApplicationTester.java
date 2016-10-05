@@ -1,4 +1,4 @@
-package be.softwarelab.EasyMockHelloWorld;
+package be.softwarelab.EasyMockHelloWorld.math;
 
 import org.easymock.EasyMock;
 import org.easymock.EasyMockRunner;

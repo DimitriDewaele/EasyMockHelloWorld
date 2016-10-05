@@ -1,4 +1,4 @@
-package be.softwarelab.EasyMockHelloWorld;
+package be.softwarelab.EasyMockHelloWorld.stock;
 
 /**
  * Value Object representing a Stock

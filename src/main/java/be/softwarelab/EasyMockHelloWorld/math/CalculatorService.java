@@ -1,4 +1,4 @@
-package be.softwarelab.EasyMockHelloWorld;
+package be.softwarelab.EasyMockHelloWorld.math;
 
 /**
  * Interface to perform basic calculator tasks.
