@@ -4,7 +4,6 @@ import org.easymock.EasyMock;
 import org.easymock.EasyMockRunner;
 import org.easymock.Mock;
 import org.easymock.TestSubject;
-
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -21,15 +20,20 @@ MathApplication mathApplication = new MathApplication();
 @Mock
 CalculatorService calcService;
 
-@Test
-public void testAdd(){
-   //add the behavior of calc service to add two numbers
-   EasyMock.expect(calcService.add(10.0,20.0)).andReturn(30.00);
-
-   //activate the mock
-   EasyMock.replay(calcService);	
-		
-   //test the add functionality
-   Assert.assertEquals(mathApplication.add(10.0, 20.0),30.0,0);
-}
+	@Test
+	public void testAdd(){
+	   //add the behavior of calc service to add two numbers
+	   EasyMock.expect(calcService.add(10.0,20.0)).andReturn(30.00);
+	   calcService.serviceUsed();
+	   EasyMock.expectLastCall().times(1);
+	
+	   //activate the mock
+	   EasyMock.replay(calcService);	
+			
+	   //test the add functionality
+	   Assert.assertEquals(mathApplication.add(10.0, 20.0),30.0,0);
+	
+	   //verify call to calcService is made or not
+	   EasyMock.verify(calcService);
+	}
 }
