@@ -1,4 +1,4 @@
-package be.softwarelab.EasyMockHelloWorld;
+package be.softwarelab.EasyMockHelloWorld.math;
 
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;

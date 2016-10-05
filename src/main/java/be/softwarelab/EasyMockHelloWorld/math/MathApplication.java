@@ -1,4 +1,4 @@
-package be.softwarelab.EasyMockHelloWorld;
+package be.softwarelab.EasyMockHelloWorld.math;
 
 public class MathApplication {
 	   private CalculatorService calcService;
@@ -8,6 +8,7 @@ public class MathApplication {
 	   }
 	   
 	   public double add(double input1, double input2){
+		  calcService.serviceUsed();
 	      return calcService.add(input1, input2);
 	   }
 	   
